@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=PT+Sans+Narrow&display=swap');
+body{
+background-color: pink
+}
+h1{
+  font-family: 'Aboreto', cursive;
+  color: white;
+  background-color: orange;
+    border: 2px solid white;
+      border-radius: 8px;
+}
+h2,h3{
+  font-family: 'Aboreto', cursive;
+  color: orange;
+}
+p{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.primero{
+  text-align: center;
+  margin: 50px auto;
+  width: 40%;
+}
+.segundo{
+  text-align: center;
+  margin: 50px auto;
+  width: 40%;
+}
+.tercero{
+  text-align: center;
+  margin: 50px auto;
+  width: 40%;
+}
+.tarjeta2{
+  text-align: center;
+  background-color: pink;
+  margin: 10px auto;
+  width: 10%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
