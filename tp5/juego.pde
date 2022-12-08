@@ -3,7 +3,7 @@ PImage fondo;
 PImage ft;
 String estado, condicionDe;
 PFont fuente1;
-int posX,posY;
+int xpos, ypos;
 boolean perder;
 Abeja abeja1;
 Bichos[]bichos = new Bichos [6];
@@ -11,7 +11,10 @@ Miel[]miel = new Miel [3];
 
 
 Juego(){
+  xpos= 60;
+  ypos=60;
     estado= "inicio";
+    
     condicionDe= "ganar";
     condicionDe= "perder";
     fondo=loadImage("girasoles.jpg");
@@ -74,7 +77,8 @@ Juego(){
     fill(255);
     stroke(#FFE627);
      strokeWeight(8);
-    text("Creditos",300,310);}
+    text("Creditos",300,310);
+    }
     
     
     
@@ -113,6 +117,10 @@ Juego(){
      text("Tecnologia Multimedial",300,250);
      text("Comision 2, Legajo 91356/9", 300, 300);
      popStyle();}}
+   
+   
+   
+    
       
      
     void interaccion(){ //para acceder al estado de intrucción y jugar
@@ -131,9 +139,17 @@ Juego(){
      
     void reinicio(){
     estado= "inicio";}
+     
+     void colisiones(){
     
-  
+    if(estado== "Perdiste"){
+      fill (255);
+      text ("Perdiste", 300,310);
 }
-    
-    
-   
+for (int i =0;i <bichos.length;i++){
+    if(dist(bichos[i].xpos,bichos[i].ypos,abeja1.xpos, abeja1.ypos)<50){
+      condicionDe = "perder";
+    }}
+
+ }
+}

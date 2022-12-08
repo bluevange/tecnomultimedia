@@ -1,24 +1,25 @@
 class Abeja{
 PImage abeja1;
-float pox,poy;
-
+float xpos,ypos;
 
   Abeja(){
   abeja1=loadImage("abeja.png"); }
   void mover(){
-  teclas();}
+  teclas();
+
+}
   
   void dibujar(){
-  image(abeja1,520,poy,60,60);}
+  image(abeja1,520,ypos,60,60);}
 
   void teclas(){
   if(keyPressed==true){
   }else{
   if(keyCode==UP){
-  poy-=4;
+  ypos-=4;
   }else{
   if(keyCode==DOWN){
-  poy+=4;
+  ypos+=4;
 }
 }
 }
