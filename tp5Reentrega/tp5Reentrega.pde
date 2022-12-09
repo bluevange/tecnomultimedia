@@ -1,5 +1,5 @@
 //https://youtu.be/PRmMfJ7q_so
-uego juego;
+Juego juego;
 import ddf.minim.*;
 Minim musica;
 AudioPlayer cancion, ganar, perder;
