@@ -1,4 +1,3 @@
-//VIDEO https://www.youtube.com/watch?v=ZZuUkE_A-ww
 GestorDeInteracion g;
 int ancho=20;
 int ancho2=20;
